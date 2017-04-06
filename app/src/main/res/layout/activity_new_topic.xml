@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/newTopicInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/newTopicInfo"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textAllCaps="true"
+                android:height="56dp"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/newTopicPicText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/newTopicPicText"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:id="@+id/newTopicPicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                design:srcCompat="@drawable/no_image"
+                android:contentDescription="@string/newTopicPicture"/>
+
+            <EditText
+                android:id="@+id/newTopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintNewTopic"
+                android:inputType="text"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"/>
+
+            <Button
+                android:id="@+id/chooseTopicPicture"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/btnTopicPicture"
+                android:textStyle="bold"
+                android:background="@color/colorAccent"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/createNewTopic"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="100dp"
+                android:text="@string/btnCreateTopic"
+                android:textStyle="bold"
+                android:background="@android:color/black"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            design:menu="@menu/menu_navigation"
+            android:background="@color/colorAccent"
+            design:itemTextColor="@android:color/black"
+            design:itemIconTint="@android:color/black" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow"
+        android:layout_above="@id/frame"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarNewTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

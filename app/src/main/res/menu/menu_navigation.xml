@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeView"
+        android:icon="@drawable/ic_home"
+        android:title="@string/homeView" />
+
+    <item android:id="@+id/newTopicView"
+        android:title="@string/topicView"
+        android:icon="@drawable/ic_fiber_new" />
+
+    <item android:id="@+id/settingsView"
+        android:title="@string/settingsView"
+        android:icon="@drawable/ic_person" />
+
+</menu>

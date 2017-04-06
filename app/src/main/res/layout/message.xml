@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/other_user"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false" />
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_time"
+        android:textColor="@android:color/black"
+        android:text="TIMETIMETIME"
+        android:layout_below="@+id/message_user"
+        android:layout_alignParentEnd="true" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/other_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/other_user"
+        android:layout_alignParentEnd="false"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_user"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/other_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_time"
+        android:textColor="@android:color/black"
+        android:text="TIMETIMETIME"
+        android:layout_below="@+id/message_user"
+        android:layout_alignParentEnd="true" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/message_user"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:padding="10dp" />
+
+</RelativeLayout>
